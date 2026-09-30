@@ -7,7 +7,7 @@ import { NAV } from "@/lib/site";
 export function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="sticky top-0 z-40 border-b border-ink/10 bg-white/95 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-sage bg-white/95 backdrop-blur">
       <div className="wrap flex items-center justify-between py-4">
         <Link href="/" className="text-xl font-bold tracking-[-0.04em]" onClick={() => setOpen(false)}>
           MISO <span className="font-normal tracking-[0.3em] text-sm">STUDIO</span>
@@ -30,7 +30,7 @@ export function Header() {
         </button>
       </div>
       {open && (
-        <nav id="mobile-nav" aria-label="Mobile" className="border-t border-ink/10 bg-white lg:hidden">
+        <nav id="mobile-nav" aria-label="Mobile" className="border-t border-sage bg-white lg:hidden">
           <ul className="wrap py-3">
             {NAV.map((n) => (
               <li key={n.href}>

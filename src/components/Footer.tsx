@@ -3,7 +3,7 @@ import { FOOTER_NAV, SITE } from "@/lib/site";
 
 export function Footer() {
   return (
-    <footer className="bg-cream">
+    <footer className="border-t border-sage bg-cream">
       <div className="wrap grid gap-10 py-14 md:grid-cols-3">
         <div>
           <p className="text-xl font-bold tracking-[-0.04em]">
@@ -38,7 +38,7 @@ export function Footer() {
           </p>
         </div>
       </div>
-      <div className="border-t border-ink/10 py-5 text-center text-xs text-muted">
+      <div className="border-t border-sage py-5 text-center text-xs text-muted">
         © {new Date().getFullYear()} MISO Studio. Proudly designing websites for businesses across regional NSW, Sydney, Melbourne and Australia.
       </div>
     </footer>

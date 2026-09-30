@@ -51,7 +51,7 @@ export default function StudioServices() {
                 <h3>{p.name}</h3>
                 <p className="mt-3 text-[#2b2b29]">{p.tagline}</p>
                 <p className="mt-5 font-medium">{p.price}</p>
-                {p.priceNote && <p className="text-sm text-muted">{p.priceNote}</p>}
+                {p.priceNote && <p className="text-sm font-bold text-ink">{p.priceNote}</p>}
                 <ul className="mt-5 flex-1 space-y-1.5 text-sm">
                   {p.includes.map((i) => (
                     <li key={i}>- {i}</li>

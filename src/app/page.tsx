@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/Button";
+import { Swirl } from "@/components/Swirl";
 import { Photo } from "@/components/Photo";
 import { Faq } from "@/components/Faq";
 import { Testimonials } from "@/components/Testimonials";
@@ -58,7 +59,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section shape-section">
+        <Swirl variant="a" className="right-[-12rem] top-[-6rem] w-[52rem] opacity-90" />
         <div className="wrap">
           <h2 className="max-w-2xl">Websites built to be found, and to bring in enquiries.</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -67,7 +69,7 @@ export default function Home() {
                 <h3>{p.name}</h3>
                 <p className="mt-3 text-[#2b2b29]">{p.tagline}</p>
                 <p className="mt-5 font-medium">{p.price}</p>
-                {p.priceNote && <p className="text-sm text-muted">{p.priceNote}</p>}
+                {p.priceNote && <p className="text-sm font-bold text-ink">{p.priceNote}</p>}
                 <ul className="mt-5 flex-1 space-y-1.5 text-sm">
                   {p.includes.slice(0, 4).map((i) => (
                     <li key={i}>- {i}</li>
@@ -110,7 +112,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section shape-section">
+        <Swirl variant="b" className="left-[-14rem] top-[-8rem] w-[50rem] opacity-90" />
         <div className="wrap grid gap-10 lg:grid-cols-2">
           <div>
             <h2>Local to Orange and Bathurst.</h2>
@@ -162,7 +165,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section shape-section">
+        <Swirl variant="c" className="right-[-10rem] top-[-4rem] w-[56rem] opacity-90" />
         <div className="wrap">
           <Testimonials items={TESTIMONIALS.slice(0, 6)} heading="Kind words from clients" />
           <p className="mt-8">

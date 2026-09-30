@@ -94,7 +94,7 @@ export const PACKAGES: Package[] = [
     tagline:
       "A complete, immersive website designed with depth and storytelling for established brands.",
     price: "Squarespace/Shopify $7,500",
-    priceNote: "WordPress $8,500",
+    priceNote: "WordPress from $8,500",
     includes: [
       "1:1 site strategy session",
       "8-page custom website",

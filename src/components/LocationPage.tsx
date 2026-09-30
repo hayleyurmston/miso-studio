@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "./Button";
+import { Swirl } from "./Swirl";
 import { Faq } from "./Faq";
 import { JsonLd } from "./JsonLd";
 import { CtaBand } from "./CtaBand";
@@ -45,7 +46,8 @@ export function LocationPage({ d }: { d: LocationPageData }) {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section shape-section">
+        <Swirl variant="a" className="right-[-14rem] top-[-8rem] w-[50rem] opacity-90" />
         <div className="wrap-narrow">
           <h2>{d.localHeading}</h2>
           <div className="prose-miso">
@@ -78,7 +80,8 @@ export function LocationPage({ d }: { d: LocationPageData }) {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section shape-section">
+        <Swirl variant="b" className="left-[-14rem] top-[-6rem] w-[50rem] opacity-90" />
         <div className="wrap-narrow">
           <h2>{d.midHeading}</h2>
           <div className="prose-miso">
@@ -103,7 +106,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
                 <h3>{p.name}</h3>
                 <p className="mt-2 text-sm text-[#2b2b29]">{p.tagline}</p>
                 <p className="mt-4 font-medium">{p.price}</p>
-                {p.priceNote && <p className="text-sm text-muted">{p.priceNote}</p>}
+                {p.priceNote && <p className="text-sm font-bold text-ink">{p.priceNote}</p>}
               </li>
             ))}
           </ul>
@@ -114,14 +117,15 @@ export function LocationPage({ d }: { d: LocationPageData }) {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section shape-section">
+        <Swirl variant="c" className="right-[-12rem] top-[-5rem] w-[52rem] opacity-90" />
         <div className="wrap-narrow">
           <Faq items={d.faqs} heading={`Common questions from ${d.town} businesses`} />
         </div>
       </section>
 
       <CtaBand heading="Let's talk about your website" />
-      <p className="bg-ink pb-10 text-center text-sm text-white/60">{d.alsoWorking}</p>
+      <p className="border-t-0 bg-ink pb-10 text-center text-sm text-white/60">{d.alsoWorking}</p>
     </>
   );
 }
