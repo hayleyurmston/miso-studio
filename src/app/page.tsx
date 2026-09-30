@@ -116,11 +116,18 @@ export default function Home() {
         <Swirl variant="b" className="left-[-14rem] top-[-8rem] w-[50rem] opacity-90" />
         <div className="wrap grid gap-10 lg:grid-cols-2">
           <div>
-            <h2>Local to Orange and Bathurst.</h2>
+            <h2>Local to Orange and Bathurst. Working across Australia.</h2>
             <p className="mt-4 max-w-md text-[#2b2b29]">
-              Based in Millthorpe, between the two. I know how people here search, what drives local trade, and I'm happy to meet
-              in person.
+              Based in Millthorpe, between the two. I know how people in the Central West search and what drives local trade, and
+              I'm happy to meet in person. I also work remotely with businesses in Sydney, Melbourne and right across Australia.
             </p>
+            <ul className="mt-6 flex flex-wrap gap-2" aria-label="Areas I work in">
+              {["Central West", "Sydney", "Melbourne", "Australia-wide"].map((place) => (
+                <li key={place} className="rounded-full border border-sage px-4 py-1.5 text-sm">
+                  {place}
+                </li>
+              ))}
+            </ul>
           </div>
           <ul className="grid gap-4 sm:grid-cols-2">
             <li>

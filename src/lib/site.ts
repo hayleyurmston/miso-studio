@@ -318,11 +318,11 @@ export const HOME_FAQS = [
   },
   {
     q: "Do you only work with businesses in Orange and the Central West?",
-    a: "No. MISO is based in Millthorpe and works extensively with regional businesses, but projects can be delivered remotely for businesses anywhere in Australia.",
+    a: "No. MISO is based in Millthorpe and works closely with businesses in Orange, Bathurst and the wider Central West, but I also work remotely with businesses across Australia, including Sydney and Melbourne. Calls, reviews and handovers all happen online, and I'm happy to meet in person if you're nearby.",
   },
   {
     q: "How much does a new website cost?",
-    a: "Focused Custom Websites start from $1,500 + GST, and full 8-page Landmark sites start from $7,500. See the Studio Services page for every package, or book a call and I'll recommend the right fit.",
+    a: "It depends on the size of the project. A website refresh starts from $1,100 with a MISO VIP Day: eight dedicated hours to update, refine or rebuild your homepage or add small pages, plus 7 days of email support. Focused Custom Websites start from $1,500 + GST, and full 8-page Landmark sites start from $7,500. See the Studio Services page for every package, or book a call and I'll recommend the right fit.",
   },
 ];
 
