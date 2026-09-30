@@ -1,0 +1,27 @@
+import { Button } from "./Button";
+import { SITE } from "@/lib/site";
+
+export function CtaBand({
+  heading = "Thinking about what's next for your website?",
+  body = "Tell me what you're working on and I'll recommend the right approach - no pressure, no jargon.",
+}: {
+  heading?: string;
+  body?: string;
+}) {
+  return (
+    <section className="section bg-ink text-white">
+      <div className="wrap-narrow text-center">
+        <h2 className="!text-white">{heading}</h2>
+        <p className="mt-4 text-white/80">{body}</p>
+        <div className="mt-8 flex flex-wrap justify-center gap-3">
+          <Button href="/contact">Book a complimentary call</Button>
+        </div>
+        <p className="mt-6 text-sm text-white/70">
+          <a className="underline underline-offset-4" href={`mailto:${SITE.email}`}>{SITE.email}</a>
+          {"  |  "}
+          <a className="underline underline-offset-4" href={SITE.phoneHref}>{SITE.phone}</a>
+        </p>
+      </div>
+    </section>
+  );
+}
