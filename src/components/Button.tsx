@@ -3,7 +3,7 @@ import Link from "next/link";
 type Props = {
   href: string;
   children: React.ReactNode;
-  variant?: "primary" | "ghost";
+  variant?: "primary" | "ghost" | "light";
   className?: string;
 };
 
@@ -13,7 +13,9 @@ export function Button({ href, children, variant = "primary", className = "" }: 
   const styles =
     variant === "primary"
       ? "bg-sage text-white hover:bg-sage-dark"
-      : "border border-ink/30 text-ink hover:bg-ink hover:text-white";
+      : variant === "light"
+      ? "bg-cream text-ink hover:bg-white"
+      : "border-2 border-ink/30 text-ink hover:bg-ink hover:text-white";
   const cls = `${base} ${styles} ${className}`;
   const external = /^https?:/.test(href) || href.startsWith("tel:") || href.startsWith("mailto:");
   return external ? (

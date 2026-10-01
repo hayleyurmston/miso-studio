@@ -71,7 +71,7 @@ export default function Home() {
                 <p className="mt-5 font-medium">{p.price}</p>
                 {p.priceNote && <p className="text-sm font-bold text-ink">{p.priceNote}</p>}
                 <ul className="mt-5 flex-1 space-y-1.5 text-sm">
-                  {p.includes.slice(0, 4).map((i) => (
+                  {p.includes.map((i) => (
                     <li key={i}>- {i}</li>
                   ))}
                 </ul>
@@ -81,7 +81,7 @@ export default function Home() {
               </article>
             ))}
           </div>
-          <p className="mt-8">
+          <p className="mt-8 text-center">
             <Link href="/studio-services" className="underline underline-offset-4 hover:text-sage-dark">
               See every package, from $1,500 to $8,500
             </Link>

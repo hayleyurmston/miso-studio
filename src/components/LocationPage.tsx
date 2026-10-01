@@ -125,7 +125,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
       </section>
 
       <CtaBand heading="Let's talk about your website" />
-      <p className="border-t-0 bg-ink pb-10 text-center text-sm text-white/60">{d.alsoWorking}</p>
+      <p className="border-t-0 bg-sage pb-10 text-center text-sm text-white/90">{d.alsoWorking}</p>
     </>
   );
 }
