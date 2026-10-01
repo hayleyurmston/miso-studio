@@ -29,13 +29,13 @@ export default function Portfolio() {
           <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {PORTFOLIO.map((p) => (
               <li key={p.name}>
-                <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-charcoal bg-cream">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-charcoal bg-white">
                   <Image
                     src={`/images/portfolio/${p.img ?? p.name.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-")}.webp`}
                     alt={`${p.name}, ${p.kind.toLowerCase()} by MISO Studio for a business in ${p.place}`}
                     fill
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover"
+                    className={p.fit === "contain" ? "object-contain p-2" : "object-cover"}
                     style={{ objectPosition: p.pos ?? "center" }}
                   />
                 </div>
