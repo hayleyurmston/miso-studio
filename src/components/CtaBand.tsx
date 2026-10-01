@@ -9,17 +9,17 @@ export function CtaBand({
   body?: string;
 }) {
   return (
-    <section className="section bg-sage text-white">
+    <section className="cta-band section bg-sage text-white">
       <div className="wrap-narrow text-center">
         <h2 className="!text-white">{heading}</h2>
         <p className="mt-4 text-white/90">{body}</p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Button href="/contact" variant="light">Book a complimentary call</Button>
         </div>
-        <p className="mt-6 text-sm text-white/90">
-          <a className="underline underline-offset-4" href={`mailto:${SITE.email}`}>{SITE.email}</a>
+        <p className="mt-6 border-t border-charcoal pt-6 text-sm text-white/90">
+          <a className="font-medium text-charcoal underline underline-offset-4" href={`mailto:${SITE.email}`}>{SITE.email}</a>
           {"  |  "}
-          <a className="underline underline-offset-4" href={SITE.phoneHref}>{SITE.phone}</a>
+          <a className="font-medium text-charcoal underline underline-offset-4" href={SITE.phoneHref}>{SITE.phone}</a>
         </p>
       </div>
     </section>

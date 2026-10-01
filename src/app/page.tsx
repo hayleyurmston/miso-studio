@@ -123,7 +123,7 @@ export default function Home() {
             </p>
             <ul className="mt-6 flex flex-wrap gap-2" aria-label="Areas I work in">
               {["Central West", "Sydney", "Melbourne", "Australia-wide"].map((place) => (
-                <li key={place} className="rounded-full border border-sage px-4 py-1.5 text-sm">
+                <li key={place} className="rounded-full border border-sage bg-cream px-4 py-1.5 text-sm">
                   {place}
                 </li>
               ))}
@@ -131,13 +131,13 @@ export default function Home() {
           </div>
           <ul className="grid gap-4 sm:grid-cols-2">
             <li>
-              <Link href="/web-design-orange" className="block rounded-3xl border border-charcoal p-7 transition-colors hover:bg-cream">
+              <Link href="/web-design-orange" className="block rounded-3xl border border-charcoal bg-cream p-7 transition-colors hover:bg-white">
                 <h3>Web design Orange</h3>
                 <p className="mt-2 text-sm text-muted">Websites for Orange businesses</p>
               </Link>
             </li>
             <li>
-              <Link href="/web-design-bathurst" className="block rounded-3xl border border-charcoal p-7 transition-colors hover:bg-cream">
+              <Link href="/web-design-bathurst" className="block rounded-3xl border border-charcoal bg-cream p-7 transition-colors hover:bg-white">
                 <h3>Web design Bathurst</h3>
                 <p className="mt-2 text-sm text-muted">Websites for trades, farms and producers</p>
               </Link>
@@ -176,7 +176,7 @@ export default function Home() {
         <Swirl variant="c" className="right-[-10rem] top-[-4rem] w-[56rem] opacity-90" />
         <div className="wrap">
           <Testimonials items={TESTIMONIALS.slice(0, 6)} heading="Kind words from clients" />
-          <p className="mt-8">
+          <p className="mt-8 text-center">
             <a href={SITE.reviewUrl} className="underline underline-offset-4 hover:text-sage-dark" rel="noopener">
               Enjoyed working with MISO? Please leave a Google review ★
             </a>
