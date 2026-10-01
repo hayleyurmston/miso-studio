@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { CtaBand } from "@/components/CtaBand";
 import { PORTFOLIO } from "@/lib/site";
@@ -25,11 +26,18 @@ export default function Portfolio() {
       </section>
       <section className="section">
         <div className="wrap">
-          {/* Replace each card's placeholder block with the project image once the images are in /public/images. */}
           <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {PORTFOLIO.map((p) => (
               <li key={p.name}>
-                <div className="aspect-[4/3] rounded-3xl bg-gradient-to-br from-cream to-[#cfd3c8]" role="img" aria-label={`${p.name}, ${p.place}`} />
+                <div className="relative aspect-square overflow-hidden rounded-3xl bg-cream">
+                  <Image
+                    src={`/images/portfolio/${p.name.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-")}.webp`}
+                    alt={`${p.name}, ${p.kind.toLowerCase()} by MISO Studio for a business in ${p.place}`}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
                 <h3 className="mt-4">{p.name}</h3>
                 <p className="text-sm text-muted">{p.kind} | {p.place}</p>
               </li>
