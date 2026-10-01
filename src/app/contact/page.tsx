@@ -47,7 +47,7 @@ export default function Contact() {
               <a className="text-lg font-medium underline underline-offset-4" href={SITE.phoneHref}>{SITE.phone}</a>
             </p>
             <p className="mt-2">
-              <a className="underline underline-offset-4" href={`mailto:${SITE.email}?subject=Brand%2C%20Website%20or%20Digital%20Enquiry`}>
+              <a className="underline underline-offset-4" href={`mailto:${SITE.email}?subject=Brand%2C%20Website%20or%20Digital%20Enquiry`} target="_blank" rel="noopener">
                 {SITE.email}
               </a>
             </p>

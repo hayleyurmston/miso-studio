@@ -31,11 +31,12 @@ export default function Portfolio() {
               <li key={p.name}>
                 <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-charcoal bg-cream">
                   <Image
-                    src={`/images/portfolio/${p.name.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-")}.webp`}
+                    src={`/images/portfolio/${p.img ?? p.name.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-")}.webp`}
                     alt={`${p.name}, ${p.kind.toLowerCase()} by MISO Studio for a business in ${p.place}`}
                     fill
                     sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
                     className="object-cover"
+                    style={{ objectPosition: p.pos ?? "center" }}
                   />
                 </div>
                 <h3 className="mt-4">{p.name}</h3>

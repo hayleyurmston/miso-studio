@@ -16,8 +16,8 @@ export function CtaBand({
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           <Button href="/contact" variant="light">Book a complimentary call</Button>
         </div>
-        <p className="mt-6 border-t border-charcoal pt-6 text-sm text-white/90">
-          <a className="font-medium text-charcoal underline underline-offset-4" href={`mailto:${SITE.email}`}>{SITE.email}</a>
+        <p className="mt-6 text-sm text-white/90">
+          <a className="font-medium text-charcoal underline underline-offset-4" href={`mailto:${SITE.email}`} target="_blank" rel="noopener">{SITE.email}</a>
           {"  |  "}
           <a className="font-medium text-charcoal underline underline-offset-4" href={SITE.phoneHref}>{SITE.phone}</a>
         </p>

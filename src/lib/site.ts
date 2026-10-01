@@ -464,9 +464,9 @@ export const LOCATIONS: Record<string, LocationPageData> = {
   },
 };
 
-export const PORTFOLIO = [
+export const PORTFOLIO: { name: string; place: string; kind: string; pos?: string; img?: string }[] = [
   { name: "Karoo Angus", place: "Meadow Flat, NSW", kind: "WordPress website rebuild" },
-  { name: "Tablelands Builders", place: "Bathurst, NSW", kind: "Website refresh" },
+  { name: "Tablelands Builders", place: "Bathurst, NSW", kind: "Website refresh", img: "tablelands-builders-heritage-aerial" },
   { name: "Margra Lamb", place: "Bathurst, NSW", kind: "Website design" },
   { name: "Calabash Waters", place: "Bathurst, NSW", kind: "Website design" },
   { name: "Orange 360", place: "Orange, NSW", kind: "Website, Google Ads and Meta" },
@@ -476,11 +476,11 @@ export const PORTFOLIO = [
   { name: "Total Health Orange", place: "Orange, NSW", kind: "Website" },
   { name: "Larissa Blake", place: "Orange, NSW", kind: "Website and brand" },
   { name: "Complete Reo", place: "Orange, NSW", kind: "Rebrand, Shopify and WordPress" },
-  { name: "Westonfence", place: "Parkes, NSW", kind: "WordPress and WooCommerce" },
+  { name: "Westonfence", place: "Parkes, NSW", kind: "WordPress and WooCommerce", pos: "bottom" },
   { name: "Millthorpe Village", place: "Millthorpe, NSW", kind: "Website and editorial" },
   { name: "The Silo", place: "NSW", kind: "Website" },
   { name: "KdV Aged Care Support", place: "NSW", kind: "Brand identity" },
-  { name: "Smart Guide", place: "Melbourne, VIC", kind: "Website" },
+  { name: "Smart Guide", place: "Melbourne, VIC", kind: "Website", pos: "top" },
   { name: "Capelin Law", place: "NSW", kind: "Social and brand" },
   { name: "MISO Studio", place: "Millthorpe, NSW", kind: "Own brand and website" },
 ];

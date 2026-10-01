@@ -45,15 +45,15 @@ export default function Home() {
       <section className="bg-cream">
         <div className="wrap grid gap-8 py-10 text-center md:grid-cols-3">
           <div>
-            <p className="text-4xl font-bold tracking-[-0.04em]">+57%</p>
+            <p className="text-4xl font-bold tracking-[-0.04em] text-clay">+57%</p>
             <p className="mt-1 text-sm text-muted">new visitors after on-page SEO for DPI in Schools</p>
           </div>
           <div>
-            <p className="text-4xl font-bold tracking-[-0.04em]">+109%</p>
+            <p className="text-4xl font-bold tracking-[-0.04em] text-clay">+109%</p>
             <p className="mt-1 text-sm text-muted">overall sessions for the same project</p>
           </div>
           <div>
-            <p className="text-4xl font-bold tracking-[-0.04em]">10+ years</p>
+            <p className="text-4xl font-bold tracking-[-0.04em] text-clay">10+ years</p>
             <p className="mt-1 text-sm text-muted">designing websites for regional businesses</p>
           </div>
         </div>

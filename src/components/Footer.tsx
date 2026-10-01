@@ -26,7 +26,7 @@ export function Footer() {
         </nav>
         <div className="text-sm">
           <p>
-            <a href={`mailto:${SITE.email}`} className="hover:underline">{SITE.email}</a>
+            <a href={`mailto:${SITE.email}`} target="_blank" rel="noopener" className="hover:underline">{SITE.email}</a>
           </p>
           <p className="mt-1">
             <a href={SITE.phoneHref} className="hover:underline">{SITE.phone}</a>
