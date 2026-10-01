@@ -1,3 +1,5 @@
+import { IMG } from "@/lib/images";
+import { PageHero } from "@/components/PageHero";
 import Link from "next/link";
 import { Button } from "./Button";
 import { Swirl } from "./Swirl";
@@ -32,8 +34,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
         ]}
       />
 
-      <section className="bg-cream">
-        <div className="wrap section">
+      <PageHero img={d.town === "Bathurst" ? IMG.farm : IMG.bannerRidge}>
           <p className="eyebrow">MISO Studio | Web design {d.town}</p>
           <h1 className="mt-4 max-w-3xl">{d.h1}</h1>
           <p className="mt-6 max-w-xl text-lg text-[#2b2b29]">{d.intro}</p>
@@ -43,8 +44,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
               Not ready to chat? Take the free AI and SEO check
             </Link>
           </div>
-        </div>
-      </section>
+        </PageHero>
 
       <section className="section shape-section">
         <Swirl variant="a" className="right-[-14rem] top-[-8rem] w-[50rem] opacity-90" />

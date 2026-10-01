@@ -9,7 +9,7 @@ type Props = {
 
 export function Button({ href, children, variant = "primary", className = "" }: Props) {
   const base =
-    "inline-flex items-center justify-center rounded-full px-8 py-3.5 text-sm font-medium tracking-wide transition-colors";
+    "btn inline-flex items-center justify-center rounded-full px-8 py-3.5 text-sm font-medium tracking-wide transition-colors";
   const styles =
     variant === "primary"
       ? "bg-sage text-white hover:bg-sage-dark"

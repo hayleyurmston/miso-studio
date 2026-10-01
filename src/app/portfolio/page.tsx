@@ -1,3 +1,5 @@
+import { IMG } from "@/lib/images";
+import { PageHero } from "@/components/PageHero";
 import Image from "next/image";
 import type { Metadata } from "next";
 import { CtaBand } from "@/components/CtaBand";
@@ -17,13 +19,11 @@ export const metadata: Metadata = {
 export default function Portfolio() {
   return (
     <>
-      <section className="bg-cream">
-        <div className="wrap section">
+      <PageHero img={IMG.bannerCliffs}>
           <p className="eyebrow">Portfolio</p>
           <h1 className="mt-4 max-w-3xl">A curated selection of websites and brand identities.</h1>
           <p className="mt-6 max-w-2xl text-lg text-[#2b2b29]">Crafted with clarity, intention and a little MISO magic.</p>
-        </div>
-      </section>
+        </PageHero>
       <section className="section">
         <div className="wrap">
           <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

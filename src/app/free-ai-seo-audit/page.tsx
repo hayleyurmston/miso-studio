@@ -1,3 +1,5 @@
+import { IMG } from "@/lib/images";
+import { PageHero } from "@/components/PageHero";
 import type { Metadata } from "next";
 import { Button } from "@/components/Button";
 import { SITE } from "@/lib/site";
@@ -16,8 +18,7 @@ export const metadata: Metadata = {
 export default function FreeAudit() {
   return (
     <>
-      <section className="bg-cream">
-        <div className="wrap section">
+      <PageHero img={IMG.bannerBeach}>
           <p className="eyebrow">Free check | 5 minutes</p>
           <h1 className="mt-4 max-w-3xl">Free AI and SEO readiness check</h1>
           <p className="mt-6 max-w-2xl text-lg text-[#2b2b29]">
@@ -26,8 +27,7 @@ export default function FreeAudit() {
           <div className="mt-9">
             <Button href={SITE.freeAuditUrl}>Start my free check</Button>
           </div>
-        </div>
-      </section>
+        </PageHero>
       <section className="section">
         <div className="wrap-narrow prose-miso">
           <h2>Is your website working as hard as you are?</h2>

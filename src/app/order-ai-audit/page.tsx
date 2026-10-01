@@ -1,3 +1,5 @@
+import { IMG } from "@/lib/images";
+import { PageHero } from "@/components/PageHero";
 import type { Metadata } from "next";
 import { Button } from "@/components/Button";
 import { CtaBand } from "@/components/CtaBand";
@@ -28,8 +30,7 @@ export default function OrderAudit() {
           offers: { "@type": "Offer", price: "350", priceCurrency: "AUD", url: `${SITE.url}/order-ai-audit` },
         }}
       />
-      <section className="bg-cream">
-        <div className="wrap section">
+      <PageHero img={IMG.farm}>
           <p className="eyebrow">AI Readiness &amp; SEO Audit</p>
           <h1 className="mt-4 max-w-3xl">Is AI sending customers to your competitors instead of you?</h1>
           <p className="mt-6 max-w-2xl text-lg text-[#2b2b29]">
@@ -42,8 +43,7 @@ export default function OrderAudit() {
               Start with the free check instead
             </a>
           </div>
-        </div>
-      </section>
+        </PageHero>
       <section className="section">
         <div className="wrap-narrow prose-miso">
           {/*

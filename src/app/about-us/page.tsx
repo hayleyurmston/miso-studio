@@ -1,3 +1,4 @@
+import { PageHero } from "@/components/PageHero";
 import type { Metadata } from "next";
 import { Button } from "@/components/Button";
 import { CtaBand } from "@/components/CtaBand";
@@ -20,15 +21,13 @@ export const metadata: Metadata = {
 export default function About() {
   return (
     <>
-      <section className="bg-cream">
-        <div className="wrap section">
+      <PageHero img={IMG.bannerHills}>
           <p className="eyebrow">About</p>
           <h1 className="mt-4 max-w-3xl">Rooted in story. Designed with substance.</h1>
           <p className="mt-6 max-w-2xl text-lg text-[#2b2b29]">
             A creative studio crafting thoughtful brand and web experiences for businesses ready to grow with clarity, presence and purpose.
           </p>
-        </div>
-      </section>
+        </PageHero>
 
       <section className="section">
         <div className="wrap grid items-start gap-10 lg:grid-cols-[1fr_1.3fr]">

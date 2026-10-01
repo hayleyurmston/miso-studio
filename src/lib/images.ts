@@ -6,7 +6,12 @@
 export type Img = { src: string | null; alt: string; w?: number; h?: number };
 
 export const IMG = {
-  logo: { src: null, alt: "MISO Studio" },
+  logo: { src: "/images/miso-studio-logo.webp", alt: "MISO Studio", w: 446, h: 206 },
+  bannerRidge: { src: "/images/banners/golden-ridge.webp", alt: "Golden light over a ridge in the Central West NSW ranges" },
+  bannerCliffs: { src: "/images/banners/ocean-cliffs.webp", alt: "Aerial view of ocean waves breaking against coastal cliffs" },
+  bannerBeach: { src: "/images/banners/beach-waves.webp", alt: "Aerial view of waves rolling onto a sandy beach" },
+  bannerCove: { src: "/images/banners/cove.webp", alt: "A quiet rocky cove at sunset" },
+  bannerHills: { src: "/images/banners/blue-hills.webp", alt: "Blue forested hills rolling to the horizon" },
   hero: {
     src: "/images/hero-sunrise-valley.webp",
     alt: "Sunrise over a forested mountain valley in regional New South Wales",

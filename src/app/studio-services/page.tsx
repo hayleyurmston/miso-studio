@@ -1,8 +1,12 @@
+import { PageHero } from "@/components/PageHero";
 import type { Metadata } from "next";
 import { Button } from "@/components/Button";
 import { CtaBand } from "@/components/CtaBand";
 import { JsonLd } from "@/components/JsonLd";
-import { ADDONS, EXTRAS, PACKAGES, SITE } from "@/lib/site";
+import { Faq } from "@/components/Faq";
+import { Photo } from "@/components/Photo";
+import { IMG } from "@/lib/images";
+import { ADDONS, EXTRAS, PACKAGES, SITE, STUDIO_FAQS } from "@/lib/site";
 
 const title = "Website Design Packages | Squarespace, Shopify & WordPress | MISO Studio";
 const description =
@@ -31,16 +35,14 @@ export default function StudioServices() {
           })),
         }}
       />
-      <section className="bg-cream">
-        <div className="wrap section">
+      <PageHero img={IMG.bannerRidge}>
           <p className="eyebrow">Studio services</p>
           <h1 className="mt-4 max-w-3xl">Website design with depth, clarity and intention.</h1>
           <p className="mt-6 max-w-2xl text-lg text-[#2b2b29]">
             Custom website design and development across Squarespace, Shopify and WordPress, plus fully custom-coded sites. Every
             build considers user experience, mobile performance, SEO and conversion from the start.
           </p>
-        </div>
-      </section>
+        </PageHero>
 
       <section className="section">
         <div className="wrap">
@@ -113,15 +115,26 @@ export default function StudioServices() {
       </section>
 
       <section className="section bg-cream">
-        <div className="wrap-narrow">
-          <h2>Brand photography and social content</h2>
-          <p className="mt-4 text-[#2b2b29]">
-            For professional brand photography and social media packages I collaborate with Fee May of Hamlet &amp; Fields - lifestyle-led,
-            editorial-style content for regional and rural businesses across Central West NSW. Booked separately through Hamlet &amp; Fields.
-          </p>
-          <div className="mt-6">
-            <Button href={SITE.hamletFields} variant="ghost">Visit Hamlet &amp; Fields</Button>
+        <div className="wrap grid items-center gap-10 lg:grid-cols-2">
+          <div className="relative aspect-square overflow-hidden rounded-3xl">
+            <Photo img={IMG.fee} />
           </div>
+          <div>
+            <h2>Brand photography and social content</h2>
+            <p className="mt-4 text-[#2b2b29]">
+              For professional brand photography and social media packages I collaborate with Fee May of Hamlet &amp; Fields - lifestyle-led,
+              editorial-style content for regional and rural businesses across Central West NSW. Booked separately through Hamlet &amp; Fields.
+            </p>
+            <div className="mt-6">
+              <Button href={SITE.hamletFields} variant="ghost">Visit Hamlet &amp; Fields</Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="wrap-narrow">
+          <Faq items={STUDIO_FAQS} heading="Studio services FAQs" />
         </div>
       </section>
 

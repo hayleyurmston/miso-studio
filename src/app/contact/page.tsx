@@ -1,3 +1,5 @@
+import { IMG } from "@/lib/images";
+import { PageHero } from "@/components/PageHero";
 import type { Metadata } from "next";
 import { Button } from "@/components/Button";
 import { SITE } from "@/lib/site";
@@ -19,8 +21,7 @@ const BOOKING = process.env.NEXT_PUBLIC_BOOKING_URL;
 export default function Contact() {
   return (
     <>
-      <section className="bg-cream">
-        <div className="wrap section">
+      <PageHero img={IMG.bannerCove}>
           <p className="eyebrow">Contact</p>
           <h1 className="mt-4 max-w-3xl">Let's create something considered.</h1>
           <p className="mt-6 max-w-2xl text-lg text-[#2b2b29]">
@@ -31,8 +32,7 @@ export default function Contact() {
               <Button href={BOOKING}>Book a call</Button>
             </div>
           )}
-        </div>
-      </section>
+        </PageHero>
       <section className="section">
         <div className="wrap grid gap-12 lg:grid-cols-[1.4fr_1fr]">
           <div>

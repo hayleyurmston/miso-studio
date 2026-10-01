@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { NAV } from "@/lib/site";
@@ -8,9 +9,9 @@ export function Header() {
   const [open, setOpen] = useState(false);
   return (
     <header className="sticky top-0 z-40 border-b border-sage bg-white/95 backdrop-blur">
-      <div className="wrap flex items-center justify-between py-4">
-        <Link href="/" className="text-xl font-bold tracking-[-0.04em]" onClick={() => setOpen(false)}>
-          MISO <span className="font-normal tracking-[0.3em] text-sm">STUDIO</span>
+      <div className="wrap flex items-center justify-between py-2">
+        <Link href="/" aria-label="MISO Studio home" onClick={() => setOpen(false)}>
+          <Image src="/images/miso-studio-logo.webp" alt="MISO Studio" width={446} height={206} priority className="h-12 w-auto" />
         </Link>
         <nav aria-label="Main" className="hidden items-center gap-7 text-sm lg:flex">
           {NAV.map((n) => (

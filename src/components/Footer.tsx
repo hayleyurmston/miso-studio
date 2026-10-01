@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import { IMG } from "@/lib/images";
 import { FOOTER_NAV, SITE } from "@/lib/site";
 
 export function Footer() {
@@ -6,9 +8,7 @@ export function Footer() {
     <footer className="border-t border-sage bg-cream">
       <div className="wrap grid gap-10 py-14 md:grid-cols-3">
         <div>
-          <p className="text-xl font-bold tracking-[-0.04em]">
-            MISO <span className="font-normal tracking-[0.3em] text-sm">STUDIO</span>
-          </p>
+          <Image src={IMG.logo.src!} alt={IMG.logo.alt} width={446} height={206} className="h-16 w-auto" />
           <p className="mt-3 max-w-xs text-sm text-[#2b2b29]">
             Strategy-led website design for regional and rural businesses. Based in Millthorpe, near Orange, Central West NSW.
           </p>
@@ -34,7 +34,7 @@ export function Footer() {
           <p className="mt-4 flex gap-5">
             <a href={SITE.instagram} className="hover:underline" rel="noopener">Instagram</a>
             <a href={SITE.linkedin} className="hover:underline" rel="noopener">LinkedIn</a>
-            <a href={SITE.reviewUrl} className="hover:underline" rel="noopener">Google review</a>
+            <a href={SITE.reviewUrl} className="hover:underline" rel="noopener">Leave a Google review</a>
           </p>
         </div>
       </div>

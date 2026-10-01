@@ -21,10 +21,10 @@ const FEATURED = [PACKAGES[0], PACKAGES[3]];
 export default function Home() {
   return (
     <>
-      <section className="relative isolate overflow-hidden">
+      <section className="on-photo relative isolate overflow-hidden">
         <div className="absolute inset-0 -z-10">
           <Photo img={IMG.hero} priority sizes="100vw" />
-          <div className="absolute inset-0 bg-white/70" />
+          <div className="absolute inset-0 bg-ink/10" />
         </div>
         <div className="wrap section">
           <p className="eyebrow">Web design studio | Millthorpe, near Orange NSW</p>
@@ -178,7 +178,7 @@ export default function Home() {
           <Testimonials items={TESTIMONIALS.slice(0, 6)} heading="Kind words from clients" />
           <p className="mt-8">
             <a href={SITE.reviewUrl} className="underline underline-offset-4 hover:text-sage-dark" rel="noopener">
-              Read or leave a Google review
+              Enjoyed working with MISO? Please leave a Google review ★
             </a>
           </p>
         </div>

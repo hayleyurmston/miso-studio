@@ -1,3 +1,5 @@
+import { IMG } from "@/lib/images";
+import { PageHero } from "@/components/PageHero";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBand } from "@/components/CtaBand";
@@ -16,15 +18,13 @@ export const metadata: Metadata = {
 export default function DigitalGuide() {
   return (
     <>
-      <section className="bg-cream">
-        <div className="wrap section">
+      <PageHero img={IMG.rockpool}>
           <p className="eyebrow">Digital Guide</p>
           <h1 className="mt-4 max-w-3xl">Website, SEO and AI search, in plain English.</h1>
           <p className="mt-6 max-w-2xl text-lg text-[#2b2b29]">
             Fresh guides for regional business owners are on their way. In the meantime, start here.
           </p>
-        </div>
-      </section>
+        </PageHero>
       <section className="section">
         <div className="wrap-narrow">
           <ul className="space-y-4 text-lg">

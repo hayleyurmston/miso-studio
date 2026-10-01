@@ -480,3 +480,38 @@ export const PORTFOLIO = [
   { name: "Capelin Law", place: "NSW", kind: "Social and brand" },
   { name: "MISO Studio", place: "Millthorpe, NSW", kind: "Own brand and website" },
 ];
+
+export const STUDIO_FAQS = [
+  {
+    q: "What's the difference between Squarespace, Shopify and WordPress pricing?",
+    a: "Squarespace and Shopify builds are priced lower because the platform handles hosting, security and updates for you. WordPress gives you the most flexibility, so WordPress packages cost a little more (for example The Footprint is $3,600 compared with $3,000, and The Landmark starts from $8,500). I'll recommend the right platform for your business on a call.",
+  },
+  {
+    q: "Do your prices include GST?",
+    a: "Prices exclude GST unless stated. Additional pages are from $650 each.",
+  },
+  {
+    q: "What's included in The Brand Mark?",
+    a: "A direction and moodboard, a colour and font system, a new or refined logo, brand guidelines and a print-ready business card. It pairs well with a website build, so we can plan both together.",
+  },
+  {
+    q: "What is a MISO VIP Day?",
+    a: "Eight dedicated hours of design and build time for updates, refinements, a homepage refresh or small builds, plus 7 days of email support. It's a great fit if you have a site that just needs a lift.",
+  },
+  {
+    q: "How long does a website take?",
+    a: "It depends on the package and how quickly content comes together. The Footprint has a 5-day turnaround once content is ready. I'll give you a clear timeline on your discovery call.",
+  },
+  {
+    q: "Do you offer brand photography?",
+    a: "Yes, through my collaborator Fee May of Hamlet & Fields. Photography and social content packages are booked separately with Fee, and they pair beautifully with a new website.",
+  },
+  {
+    q: "Can I add services later?",
+    a: "Yes. The Studio Menu is there so you can add copywriting, SEO, Google Ads or a Care Plan when you're ready. I'll suggest the right ones on your discovery call.",
+  },
+  {
+    q: "Not sure what you need?",
+    a: "Book a free 30-minute call. I'll ask a few questions about your business and budget and recommend the right package - no pressure.",
+  },
+];
