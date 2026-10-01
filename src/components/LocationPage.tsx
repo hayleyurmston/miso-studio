@@ -73,7 +73,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
               <Link href="/portfolio" className="underline underline-offset-4 hover:text-sage-dark">See the full portfolio</Link>
             </p>
           </div>
-          <figure className="self-center rounded-3xl bg-white p-8">
+          <figure className="self-center rounded-3xl border border-charcoal bg-white p-8">
             <blockquote className="text-xl font-medium leading-snug tracking-[-0.02em]">&ldquo;{d.quote.text}&rdquo;</blockquote>
             <figcaption className="mt-4 text-sm text-muted">{d.quote.by}</figcaption>
           </figure>
@@ -102,7 +102,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
           <h2>What I can build for you</h2>
           <ul className="mt-8 grid gap-4 md:grid-cols-2">
             {PACKAGES.map((p) => (
-              <li key={p.name} className="rounded-3xl bg-white p-7">
+              <li key={p.name} className="rounded-3xl border border-charcoal bg-white p-7">
                 <h3>{p.name}</h3>
                 <p className="mt-2 text-sm text-[#2b2b29]">{p.tagline}</p>
                 <p className="mt-4 font-medium">{p.price}</p>

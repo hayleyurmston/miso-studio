@@ -49,7 +49,7 @@ export default function StudioServices() {
           <h2>Website packages</h2>
           <ul className="mt-10 grid gap-6 md:grid-cols-2">
             {PACKAGES.map((p) => (
-              <li key={p.name} className="flex flex-col rounded-3xl bg-cream p-8">
+              <li key={p.name} className="flex flex-col rounded-3xl border border-charcoal bg-cream p-8">
                 <h3>{p.name}</h3>
                 <p className="mt-3 text-[#2b2b29]">{p.tagline}</p>
                 <p className="mt-5 font-medium">{p.price}</p>
@@ -69,12 +69,17 @@ export default function StudioServices() {
         </div>
       </section>
 
+      <div className="relative h-40 overflow-hidden md:h-56" role="img" aria-label={IMG.mist.alt}>
+        <Photo img={IMG.mist} sizes="100vw" />
+        <div className="absolute inset-0 bg-ink/10" />
+      </div>
+
       <section className="section bg-cream">
         <div className="wrap">
           <h2>Brand, support and marketing</h2>
           <ul className="mt-10 grid gap-6 md:grid-cols-2">
             {EXTRAS.map((e) => (
-              <li key={e.name} className="flex flex-col rounded-3xl bg-white p-8">
+              <li key={e.name} className="flex flex-col rounded-3xl border border-charcoal bg-white p-8">
                 <h3>{e.name}</h3>
                 <p className="mt-2 font-medium">{e.price}</p>
                 <p className="mt-3 flex-1 text-[#2b2b29]">{e.blurb}</p>
@@ -93,10 +98,13 @@ export default function StudioServices() {
           <p className="mt-3 max-w-xl text-[#2b2b29]">
             Curated add-ons to tailor your site and brand. Not sure what you need? I'll recommend the right ones on your discovery call.
           </p>
-          <div className="mt-10 grid gap-10 md:grid-cols-2">
+          <div className="mt-10 divide-y divide-ink/15 border-y border-ink/15">
             {ADDONS.map((g) => (
-              <div key={g.group}>
-                <h3>{g.group}</h3>
+              <details key={g.group} className="group py-5">
+                <summary className="flex cursor-pointer list-none items-start justify-between gap-6 text-xl font-bold tracking-[-0.03em]">
+                  {g.group}
+                  <span aria-hidden className="mt-0.5 text-sage transition-transform group-open:rotate-45">+</span>
+                </summary>
                 <ul className="mt-4 divide-y divide-ink/10 border-y border-ink/10">
                   {g.items.map((i) => (
                     <li key={i.name} className="py-3">
@@ -108,7 +116,7 @@ export default function StudioServices() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </details>
             ))}
           </div>
         </div>
@@ -116,7 +124,7 @@ export default function StudioServices() {
 
       <section className="section bg-cream">
         <div className="wrap grid items-center gap-10 lg:grid-cols-2">
-          <div className="relative aspect-square overflow-hidden rounded-3xl">
+          <div className="relative aspect-square overflow-hidden rounded-3xl border border-sage">
             <Photo img={IMG.fee} />
           </div>
           <div>

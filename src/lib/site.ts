@@ -322,6 +322,10 @@ export const HOME_FAQS = [
     a: "No. MISO is based in Millthorpe and works closely with businesses in Orange, Bathurst and the wider Central West, but I also work remotely with businesses across Australia, including Sydney and Melbourne. Calls, reviews and handovers all happen online, and I'm happy to meet in person if you're nearby.",
   },
   {
+    q: "How long does a new website take?",
+    a: "Once I have your content and assets, I'll build your homepage for a first review within 3 days. Most websites are ready for final review in 7-14 days, depending on the size of the project.",
+  },
+  {
     q: "How much does a new website cost?",
     a: "It depends on the size of the project. A website refresh starts from $1,100 with a MISO VIP Day: eight dedicated hours to update, refine or rebuild your homepage or add small pages, plus 7 days of email support. Focused Custom Websites start from $1,500 + GST, and full 8-page Landmark sites start from $7,500. See the Studio Services page for every package, or book a call and I'll recommend the right fit.",
   },
@@ -500,7 +504,7 @@ export const STUDIO_FAQS = [
   },
   {
     q: "How long does a website take?",
-    a: "It depends on the package and how quickly content comes together. The Footprint has a 5-day turnaround once content is ready. I'll give you a clear timeline on your discovery call.",
+    a: "Once I have your content and assets, I'll build your homepage for a first review within 3 days. Most websites are ready for final review in 7-14 days, depending on the size of the project. The Footprint is the quickest, with a 5-day turnaround. I'll give you a clear timeline on your discovery call.",
   },
   {
     q: "Do you offer brand photography?",

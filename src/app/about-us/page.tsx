@@ -31,7 +31,7 @@ export default function About() {
 
       <section className="section">
         <div className="wrap grid items-start gap-10 lg:grid-cols-[1fr_1.3fr]">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-charcoal">
             <Photo img={IMG.hayley} priority />
           </div>
           <div>
@@ -80,7 +80,7 @@ export default function About() {
               <Button href={SITE.hamletFields} variant="ghost">Visit Hamlet &amp; Fields</Button>
             </div>
           </div>
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-sage">
             <Photo img={IMG.fee} />
           </div>
         </div>

@@ -65,7 +65,7 @@ export default function Home() {
           <h2 className="max-w-2xl">Websites built to be found, and to bring in enquiries.</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
             {FEATURED.map((p) => (
-              <article key={p.name} className="flex flex-col rounded-3xl bg-cream p-8">
+              <article key={p.name} className="flex flex-col rounded-3xl border border-charcoal bg-cream p-8">
                 <h3>{p.name}</h3>
                 <p className="mt-3 text-[#2b2b29]">{p.tagline}</p>
                 <p className="mt-5 font-medium">{p.price}</p>
@@ -91,7 +91,7 @@ export default function Home() {
 
       <section className="section bg-cream">
         <div className="wrap grid items-center gap-10 lg:grid-cols-2">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl">
+          <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-sage">
             <Photo img={IMG.rockpool} />
           </div>
           <div>
@@ -131,13 +131,13 @@ export default function Home() {
           </div>
           <ul className="grid gap-4 sm:grid-cols-2">
             <li>
-              <Link href="/web-design-orange" className="block rounded-3xl border border-ink/15 p-7 transition-colors hover:bg-cream">
+              <Link href="/web-design-orange" className="block rounded-3xl border border-charcoal p-7 transition-colors hover:bg-cream">
                 <h3>Web design Orange</h3>
                 <p className="mt-2 text-sm text-muted">Websites for Orange businesses</p>
               </Link>
             </li>
             <li>
-              <Link href="/web-design-bathurst" className="block rounded-3xl border border-ink/15 p-7 transition-colors hover:bg-cream">
+              <Link href="/web-design-bathurst" className="block rounded-3xl border border-charcoal p-7 transition-colors hover:bg-cream">
                 <h3>Web design Bathurst</h3>
                 <p className="mt-2 text-sm text-muted">Websites for trades, farms and producers</p>
               </Link>
@@ -148,7 +148,7 @@ export default function Home() {
 
       <section className="section bg-cream">
         <div className="wrap grid items-center gap-10 lg:grid-cols-[1fr_1.2fr]">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl">
+          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-sage">
             <Photo img={IMG.hayley} />
           </div>
           <div>

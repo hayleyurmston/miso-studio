@@ -29,7 +29,7 @@ export default function Portfolio() {
           <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {PORTFOLIO.map((p) => (
               <li key={p.name}>
-                <div className="relative aspect-square overflow-hidden rounded-3xl bg-cream">
+                <div className="relative aspect-square overflow-hidden rounded-3xl border border-charcoal bg-cream">
                   <Image
                     src={`/images/portfolio/${p.name.toLowerCase().replace(/&/g, "and").replace(/[^a-z0-9]+/g, "-")}.webp`}
                     alt={`${p.name}, ${p.kind.toLowerCase()} by MISO Studio for a business in ${p.place}`}

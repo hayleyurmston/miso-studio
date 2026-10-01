@@ -14,7 +14,7 @@ export function Button({ href, children, variant = "primary", className = "" }: 
     variant === "primary"
       ? "bg-sage text-white hover:bg-sage-dark"
       : variant === "light"
-      ? "bg-cream text-ink hover:bg-white"
+      ? "border border-ink/30 bg-cream text-ink hover:bg-white"
       : "border-2 border-ink/30 text-ink hover:bg-ink hover:text-white";
   const cls = `${base} ${styles} ${className}`;
   const external = /^https?:/.test(href) || href.startsWith("tel:") || href.startsWith("mailto:");
