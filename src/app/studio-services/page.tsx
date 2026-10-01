@@ -103,7 +103,7 @@ export default function StudioServices() {
               <details key={g.group} className="group py-5">
                 <summary className="flex cursor-pointer list-none items-start justify-between gap-6 text-xl font-bold tracking-[-0.03em]">
                   {g.group}
-                  <span aria-hidden className="mt-0.5 text-sage transition-transform group-open:rotate-45">+</span>
+                  <span aria-hidden className="mt-0.5 text-clay transition-transform group-open:rotate-45">+</span>
                 </summary>
                 <ul className="mt-4 divide-y divide-ink/10 border-y border-ink/10">
                   {g.items.map((i) => (

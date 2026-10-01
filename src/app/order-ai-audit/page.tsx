@@ -39,7 +39,7 @@ export default function OrderAudit() {
           <p className="mt-6 text-3xl font-bold tracking-[-0.03em]">$350</p>
           <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-4">
             <Button href={SITE.auditPaymentLink}>Get AI ready</Button>
-            <a href={SITE.freeAuditUrl} className="text-sm underline underline-offset-4 hover:text-sage-dark">
+            <a href={SITE.freeAuditUrl} className="text-sm underline underline-offset-4 hover:text-clay">
               Start with the free check instead
             </a>
           </div>

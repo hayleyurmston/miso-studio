@@ -20,7 +20,7 @@ export function Faq({ items, heading = "Questions" }: { items: { q: string; a: s
           <details key={i.q} className="group py-5">
             <summary className="flex cursor-pointer list-none items-start justify-between gap-6 text-lg font-medium">
               {i.q}
-              <span aria-hidden className="mt-1 text-sage transition-transform group-open:rotate-45">+</span>
+              <span aria-hidden className="mt-1 text-clay transition-transform group-open:rotate-45">+</span>
             </summary>
             <p className="mt-3 max-w-2xl text-[#2b2b29]">{i.a}</p>
           </details>

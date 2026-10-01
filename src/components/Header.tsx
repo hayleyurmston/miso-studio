@@ -15,7 +15,7 @@ export function Header() {
         </Link>
         <nav aria-label="Main" className="hidden items-center gap-7 text-sm lg:flex">
           {NAV.map((n) => (
-            <Link key={n.href} href={n.href} className="hover:text-sage-dark">
+            <Link key={n.href} href={n.href} className="hover:text-clay">
               {n.label}
             </Link>
           ))}

@@ -40,7 +40,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
           <p className="mt-6 max-w-xl text-lg text-[#2b2b29]">{d.intro}</p>
           <div className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4">
             <Button href="/contact">Book a free 30-minute call</Button>
-            <Link href="/free-ai-seo-audit" className="text-sm underline underline-offset-4 hover:text-sage-dark">
+            <Link href="/free-ai-seo-audit" className="text-sm underline underline-offset-4 hover:text-clay">
               Not ready to chat? Take the free AI and SEO check
             </Link>
           </div>
@@ -70,7 +70,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
               ))}
             </ul>
             <p className="mt-6">
-              <Link href="/portfolio" className="underline underline-offset-4 hover:text-sage-dark">See the full portfolio</Link>
+              <Link href="/portfolio" className="underline underline-offset-4 hover:text-clay">See the full portfolio</Link>
             </p>
           </div>
           <figure className="self-center rounded-3xl border border-charcoal bg-white p-8">

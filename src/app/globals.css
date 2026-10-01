@@ -6,6 +6,7 @@
   --color-sage: #7a8c76;
   --color-sage-dark: #667861;
   --color-charcoal: #3a3a38;
+  --color-clay: #a9523a;
   --color-paper: #ffffff;
   --color-muted: #5b5b57;
   --font-sans: var(--font-grotesk), ui-sans-serif, system-ui, sans-serif;
@@ -105,6 +106,17 @@ main > * + * {
 .prose-miso a {
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  margin-right: 0.6rem;
+  border-radius: 9999px;
+  background: var(--color-clay);
+  vertical-align: 0.08em;
 }
 
 .eyebrow {

@@ -35,7 +35,7 @@ export default function Home() {
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4">
             <Button href="/contact">Book a complimentary call</Button>
-            <Link href="/free-ai-seo-audit" className="text-sm underline underline-offset-4 hover:text-sage-dark">
+            <Link href="/free-ai-seo-audit" className="text-sm underline underline-offset-4 hover:text-clay">
               Not ready to chat? Take the free AI and SEO check
             </Link>
           </div>
@@ -82,7 +82,7 @@ export default function Home() {
             ))}
           </div>
           <p className="mt-8 text-center">
-            <Link href="/studio-services" className="underline underline-offset-4 hover:text-sage-dark">
+            <Link href="/studio-services" className="underline underline-offset-4 hover:text-clay">
               See every package, from $1,500 to $8,500
             </Link>
           </p>
@@ -104,7 +104,7 @@ export default function Home() {
             <p className="mt-5 text-2xl font-bold tracking-[-0.03em]">$350</p>
             <div className="mt-6 flex flex-wrap items-center gap-x-8 gap-y-4">
               <Button href="/order-ai-audit">Get AI ready</Button>
-              <a href={SITE.freeAuditUrl} className="text-sm underline underline-offset-4 hover:text-sage-dark">
+              <a href={SITE.freeAuditUrl} className="text-sm underline underline-offset-4 hover:text-clay">
                 Or start with the free check
               </a>
             </div>
@@ -177,8 +177,8 @@ export default function Home() {
         <div className="wrap">
           <Testimonials items={TESTIMONIALS.slice(0, 6)} heading="Kind words from clients" />
           <p className="mt-8 text-center">
-            <a href={SITE.reviewUrl} className="underline underline-offset-4 hover:text-sage-dark" rel="noopener">
-              Enjoyed working with MISO? Please leave a Google review ★
+            <a href={SITE.reviewUrl} className="underline underline-offset-4 hover:text-clay" rel="noopener">
+              Enjoyed working with MISO? Please leave a Google review <span className="text-clay">★</span>
             </a>
           </p>
         </div>
