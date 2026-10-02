@@ -465,10 +465,7 @@ export const LOCATIONS: Record<string, LocationPageData> = {
 };
 
 // PENDING (need a site image/link from Hayley before adding to PORTFOLIO):
-//   { name: "Single Source Solutions", place: "Perth, WA", kind: "Squarespace website" },
 //   { name: "Skin 8", place: "Woollahra, NSW", kind: "Shopify e-commerce and booking" },
-//   { name: "Greater Water", place: "NSW", kind: "Custom-built website" },
-//   { name: "Beyond the Gate", place: "NSW", kind: "Custom-built website" },
 export const PORTFOLIO: { name: string; place: string; kind: string; pos?: string; img?: string; fit?: "contain" }[] = [
   { name: "Karoo Angus", place: "Meadow Flat, NSW", kind: "WordPress website rebuild" },
   { name: "Tablelands Builders", place: "Bathurst, NSW", kind: "Wix website refresh", img: "tablelands-builders-heritage-aerial"  },
@@ -493,6 +490,9 @@ export const PORTFOLIO: { name: string; place: string; kind: string; pos?: strin
   { name: "Central West Mums", place: "Orange, NSW", kind: "WordPress design and management", img: "central-west-mums-play" },
   { name: "Peisley Street Gallery", place: "Orange, NSW", kind: "Shopify e-commerce website" },
   { name: "The Management Agency", place: "Surry Hills, NSW", kind: "WordPress refresh and SEO", img: "the-management-agency-living" },
+  { name: "Single Source Solutions", place: "Perth, WA", kind: "Squarespace website" },
+  { name: "Greater Water", place: "Millthorpe, NSW", kind: "Custom-built website" },
+  { name: "Beyond the Gate", place: "Central West, NSW", kind: "Custom-built website" },
   { name: "MISO Studio", place: "Millthorpe, NSW", kind: "Own brand and custom-built website" },
 ];
 
