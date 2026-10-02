@@ -34,8 +34,8 @@ export function ContactForm() {
   if (state === "sent") {
     return (
       <div role="status" className="rounded-3xl border border-charcoal bg-cream p-8">
-        <h3>Thank you - your message is in.</h3>
-        <p className="mt-3 text-[#2b2b29]">I'll be in touch within one working day.</p>
+        <h3>Thank you for your message.</h3>
+        <p className="mt-3 text-[#2b2b29]">We'll be in touch within one working day.</p>
       </div>
     );
   }
