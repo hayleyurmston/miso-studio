@@ -6,9 +6,9 @@ Next.js 16 site for miso-studio.au, hosted on Vercel.
 
 | Name | What it does |
 | --- | --- |
-| `RESEND_API_KEY` | Sends contact form enquiries to hayley@miso-studio.au (resend.com) |
+| `RESEND_API_KEY` | Sends contact form enquiries to hello@miso-studio.au (resend.com) |
 | `CONTACT_FROM` | Sender, e.g. `MISO Studio <hello@miso-studio.au>` (domain must be verified in Resend) |
-| `CONTACT_TO` | Optional. Defaults to hayley@miso-studio.au |
+| `CONTACT_TO` | Optional. Defaults to hello@miso-studio.au |
 | `NEXT_PUBLIC_AUDIT_PAYMENT_LINK` | Stripe Payment Link for the $350 AI Readiness Audit |
 | `NEXT_PUBLIC_GA_ID` | Google Analytics measurement ID, e.g. `G-XXXXXXX` |
 | `NEXT_PUBLIC_BOOKING_URL` | Optional booking page (Acuity/Calendly) for the free 30-minute call |

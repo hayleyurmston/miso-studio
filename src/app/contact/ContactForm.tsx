@@ -91,7 +91,7 @@ export function ContactForm() {
       </button>
       {state === "error" && (
         <p role="alert" className="text-sm text-red-700">
-          That didn't send. Please email hayley@miso-studio.au or call 0403 670 603 and I'll help straight away.
+          That didn't send. Please email hello@miso-studio.au or call 0403 670 603 and I'll help straight away.
         </p>
       )}
     </form>

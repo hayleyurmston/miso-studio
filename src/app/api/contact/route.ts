@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 const TO = process.env.CONTACT_TO || "hayley@miso-studio.au";
-const FROM = process.env.CONTACT_FROM || "MISO Studio <onboarding@resend.dev>";
+const FROM = process.env.CONTACT_FROM || "MISO Studio <hello@miso-studio.au>";
 
 const esc = (s: string) =>
   s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
