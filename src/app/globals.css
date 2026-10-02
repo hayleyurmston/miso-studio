@@ -163,11 +163,9 @@ main > * + * {
   text-shadow: 0 1px 3px rgb(0 0 0 / 0.35), 0 2px 18px rgb(0 0 0 / 0.45);
 }
 
-/* Charcoal 1px lines frame the call-to-action bands */
 main > .cta-band,
 main > .cta-band + p {
   border-top: 0;
-  border-bottom: 1px solid var(--color-charcoal);
 }
 
 /* Terracotta accents: underlines on text links */
