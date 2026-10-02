@@ -464,13 +464,18 @@ export const LOCATIONS: Record<string, LocationPageData> = {
   },
 };
 
+// PENDING (need a site image/link from Hayley before adding to PORTFOLIO):
+//   { name: "Single Source Solutions", place: "Perth, WA", kind: "Squarespace website" },
+//   { name: "Skin 8", place: "Woollahra, NSW", kind: "Shopify e-commerce and booking" },
+//   { name: "Greater Water", place: "NSW", kind: "Custom-built website" },
+//   { name: "Beyond the Gate", place: "NSW", kind: "Custom-built website" },
 export const PORTFOLIO: { name: string; place: string; kind: string; pos?: string; img?: string; fit?: "contain" }[] = [
   { name: "Karoo Angus", place: "Meadow Flat, NSW", kind: "WordPress website rebuild" },
   { name: "Tablelands Builders", place: "Bathurst, NSW", kind: "Wix website refresh", img: "tablelands-builders-heritage-aerial"  },
   { name: "Margra Lamb", place: "Bathurst, NSW", kind: "WordPress website design"  },
   { name: "Calabash Waters", place: "Bathurst, NSW", kind: "Squarespace website design"  },
   { name: "Orange 360", place: "Orange, NSW", kind: "Google Ads and Meta Ads" , pos: "left" },
-  { name: "Studio Seed", place: "Orange, NSW", kind: "Website and brand" , pos: "bottom" },
+  { name: "Studio Seed", place: "Orange, NSW", kind: "Squarespace website refresh", pos: "bottom" },
   { name: "The White Place", place: "Orange and Millthorpe, NSW", kind: "Website and brand" , fit: "contain" },
   { name: "Macquariedale Wines", place: "Orange, NSW", kind: "Website" , fit: "contain" },
   { name: "Total Health Orange", place: "Orange, NSW", kind: "Squarespace website" , fit: "contain" },
@@ -481,8 +486,14 @@ export const PORTFOLIO: { name: string; place: string; kind: string; pos?: strin
   { name: "The Silo", place: "NSW", kind: "Squarespace website" , fit: "contain" },
   { name: "KdV Aged Care Support", place: "NSW", kind: "Brand identity" },
   { name: "Smart Guide", place: "Melbourne, VIC", kind: "Figma design for an in-house website", pos: "top"  },
-  { name: "Capelin Law", place: "NSW", kind: "Social and Google Ads"  },
-  { name: "MISO Studio", place: "Millthorpe, NSW", kind: "Own brand and website" },
+  { name: "Capelin Law", place: "NSW", kind: "WordPress refresh" },
+  { name: "Hamlet & Fields", place: "Bathurst, NSW", kind: "WordPress refresh and SEO" },
+  { name: "Ashburton Lavender Farm", place: "Millthorpe, NSW", kind: "WordPress refresh and SEO" },
+  { name: "Rustic Range Retreat", place: "Bathurst, NSW", kind: "Brand, Squarespace and booking" },
+  { name: "Central West Mums", place: "Orange, NSW", kind: "WordPress design and management" },
+  { name: "Piesley Street Gallery", place: "Orange, NSW", kind: "Shopify e-commerce website" },
+  { name: "The Management Agency", place: "Surry Hills, NSW", kind: "WordPress refresh and SEO" },
+  { name: "MISO Studio", place: "Millthorpe, NSW", kind: "Own brand and custom-built website" },
 ];
 
 export const STUDIO_FAQS = [
