@@ -489,10 +489,10 @@ export const PORTFOLIO: { name: string; place: string; kind: string; pos?: strin
   { name: "Capelin Law", place: "NSW", kind: "WordPress refresh" },
   { name: "Hamlet & Fields", place: "Bathurst, NSW", kind: "WordPress refresh and SEO" },
   { name: "Ashburton Lavender Farm", place: "Millthorpe, NSW", kind: "WordPress refresh and SEO" },
-  { name: "Rustic Range Retreat", place: "Bathurst, NSW", kind: "Brand, Squarespace and booking" },
-  { name: "Central West Mums", place: "Orange, NSW", kind: "WordPress design and management" },
-  { name: "Piesley Street Gallery", place: "Orange, NSW", kind: "Shopify e-commerce website" },
-  { name: "The Management Agency", place: "Surry Hills, NSW", kind: "WordPress refresh and SEO" },
+  { name: "Rustic Range Retreat", place: "Bathurst, NSW", kind: "Brand, Squarespace and booking", img: "rustic-range-retreat-cattle" },
+  { name: "Central West Mums", place: "Orange, NSW", kind: "WordPress design and management", img: "central-west-mums-play" },
+  { name: "Peisley Street Gallery", place: "Orange, NSW", kind: "Shopify e-commerce website" },
+  { name: "The Management Agency", place: "Surry Hills, NSW", kind: "WordPress refresh and SEO", img: "the-management-agency-living" },
   { name: "MISO Studio", place: "Millthorpe, NSW", kind: "Own brand and custom-built website" },
 ];
 
