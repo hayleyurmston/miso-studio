@@ -46,14 +46,24 @@ export default function OrderAudit() {
         </PageHero>
       <section className="section">
         <div className="wrap-narrow prose-miso">
-          {/*
-            TODO (Hayley): paste the exact "what's included" and turnaround wording from the
-            current Squarespace page here, so the new page promises exactly what the audit delivers.
-          */}
           <h2>Why it matters</h2>
           <p>
-            AI tools like ChatGPT and Google's AI Overviews are changing how customers find businesses, and most small business websites
-            aren't ready. The audit tells you where you stand today and gives you a clear, prioritised list of what to fix.
+            Most small business websites aren't showing up as strongly as they could in Google or in AI tools like ChatGPT,
+            Perplexity and Google's AI Overviews - and it's rarely the thing a busy business owner has time to check.
+          </p>
+          <h2>What the audit covers</h2>
+          <p>
+            The MISO AI Readiness &amp; SEO Audit reviews your website across 6 key categories, including SEO foundations, content,
+            technical performance and AI search visibility.
+          </p>
+          <h2>What's included</h2>
+          <ul>
+            <li>A personalised scored report with clear, plain-English recommendations you can act on straight away</li>
+            <li>A 30-minute Google Meet session to walk through your results together</li>
+            <li>Done for you, delivered to your inbox within 1 business day</li>
+          </ul>
+          <p>
+            You'll know exactly what to prioritise for better search visibility, now and into the future.
           </p>
         </div>
       </section>

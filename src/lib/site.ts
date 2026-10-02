@@ -464,8 +464,6 @@ export const LOCATIONS: Record<string, LocationPageData> = {
   },
 };
 
-// PENDING (need a site image/link from Hayley before adding to PORTFOLIO):
-//   { name: "Skin 8", place: "Woollahra, NSW", kind: "Shopify e-commerce and booking" },
 export const PORTFOLIO: { name: string; place: string; kind: string; pos?: string; img?: string; fit?: "contain" }[] = [
   { name: "Karoo Angus", place: "Meadow Flat, NSW", kind: "WordPress website rebuild" },
   { name: "Tablelands Builders", place: "Bathurst, NSW", kind: "Wix website refresh", img: "tablelands-builders-heritage-aerial"  },
@@ -493,6 +491,7 @@ export const PORTFOLIO: { name: string; place: string; kind: string; pos?: strin
   { name: "Single Source Solutions", place: "Perth, WA", kind: "Squarespace website" },
   { name: "Greater Water", place: "Millthorpe, NSW", kind: "Custom-built website" },
   { name: "Beyond the Gate", place: "Central West, NSW", kind: "Custom-built website" },
+  { name: "Skin 8", place: "Woollahra, NSW", kind: "Shopify e-commerce and booking" },
   { name: "MISO Studio", place: "Millthorpe, NSW", kind: "Own brand and custom-built website" },
 ];
 
