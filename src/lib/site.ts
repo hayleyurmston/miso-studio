@@ -363,7 +363,7 @@ export const LOCATIONS: Record<string, LocationPageData> = {
       "Local, strategy-led websites for Orange and the surrounding district - designed to be found on Google and AI search, and built to bring in enquiries.",
     localHeading: "A local studio, 20 minutes down the road",
     localBody: [
-      "MISO Studio is based in Millthorpe, just outside Orange. I'm Hayley, and I've spent over 10 years designing and building websites for regional businesses - wineries, retailers, health practices, trades, tourism and local organisations.",
+      "MISO Studio is based in Millthorpe, just outside Orange. I'm Hayley, and I've spent over 10 years designing and building websites for regional businesses - wineries, retailers, health practices, trades, tourism, agriculture and local organisations.",
       "Being local matters. I know the Orange market, the seasons that drive your trade and the way people here actually search. And when you want to sit down and talk it through, we can meet in person.",
     ],
     workHeading: "Orange businesses I've worked with",
@@ -409,10 +409,10 @@ export const LOCATIONS: Record<string, LocationPageData> = {
     town: "Bathurst",
     title: "Web Design Bathurst NSW | Websites for Local & Rural Business | MISO Studio",
     description:
-      "Website design for Bathurst businesses, farms and trades. Custom Squarespace, Shopify and WordPress sites with SEO and AI search built in, from a Central West studio.",
+      "Website design for Bathurst businesses, agriculture and trades. Custom Squarespace, Shopify and WordPress sites with SEO and AI search built in, from a Central West studio.",
     h1: "Website design for Bathurst businesses",
     intro:
-      "Clear, considered websites for Bathurst trades, farms, makers and service businesses - built to be found locally and to turn visitors into enquiries.",
+      "Clear, considered websites for Bathurst trades, agriculture, makers and service businesses - built to be found locally and to turn visitors into enquiries.",
     localHeading: "Central West based, Bathurst focused",
     localBody: [
       "MISO Studio is based in Millthorpe, between Orange and Bathurst. I work with Bathurst businesses on everything from a first website to a full rebuild, with the local SEO and AI search groundwork that helps people find you when they search.",
@@ -430,7 +430,7 @@ export const LOCATIONS: Record<string, LocationPageData> = {
       text: "Working with Hayley has been an absolute game-changer for my business.",
       by: "Fee May, Hamlet & Fields, Bathurst",
     },
-    midHeading: "Websites for trades, farms and producers",
+    midHeading: "Websites for trades, agriculture and producers",
     midBody:
       "If you're a builder, grower, producer or rural business, your website has a few jobs: show your work, build trust fast, and make it easy to call or enquire. I design around that:",
     midList: [

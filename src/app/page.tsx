@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/Button";
-import { Swirl } from "@/components/Swirl";
+import { Backdrop } from "@/components/Backdrop";
 import { Photo } from "@/components/Photo";
 import { Faq } from "@/components/Faq";
 import { Testimonials } from "@/components/Testimonials";
@@ -60,7 +60,7 @@ export default function Home() {
       </section>
 
       <section className="section shape-section">
-        <Swirl variant="a" className="right-[-12rem] top-[-6rem] w-[52rem] opacity-90" />
+        <Backdrop n={8} />
         <div className="wrap">
           <h2 className="max-w-2xl">Websites built to be found, and to bring in enquiries.</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
@@ -113,7 +113,7 @@ export default function Home() {
       </section>
 
       <section className="section shape-section">
-        <Swirl variant="b" className="left-[-14rem] top-[-8rem] w-[50rem] opacity-90" />
+        <Backdrop n={9} />
         <div className="wrap grid gap-10 lg:grid-cols-2">
           <div>
             <h2>Local to Orange and Bathurst. Working across Australia.</h2>
@@ -139,7 +139,7 @@ export default function Home() {
             <li>
               <Link href="/web-design-bathurst" className="block rounded-3xl border border-charcoal bg-cream p-7 transition-colors hover:bg-white">
                 <h3>Web design Bathurst</h3>
-                <p className="mt-2 text-sm text-muted">Websites for trades, farms and producers</p>
+                <p className="mt-2 text-sm text-muted">Websites for trades, agriculture and producers</p>
               </Link>
             </li>
           </ul>
@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       <section className="section shape-section">
-        <Swirl variant="c" className="right-[-10rem] top-[-4rem] w-[56rem] opacity-90" />
+        <Backdrop n={11} />
         <div className="wrap">
           <Testimonials items={TESTIMONIALS.slice(0, 6)} heading="Kind words from clients" />
           <p className="mt-8 text-center">

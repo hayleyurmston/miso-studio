@@ -2,7 +2,7 @@ import { IMG } from "@/lib/images";
 import { PageHero } from "@/components/PageHero";
 import Link from "next/link";
 import { Button } from "./Button";
-import { Swirl } from "./Swirl";
+import { Backdrop } from "./Backdrop";
 import { Faq } from "./Faq";
 import { JsonLd } from "./JsonLd";
 import { CtaBand } from "./CtaBand";
@@ -47,7 +47,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
         </PageHero>
 
       <section className="section shape-section">
-        <Swirl variant="a" className="right-[-14rem] top-[-8rem] w-[50rem] opacity-90" />
+        <Backdrop n={7} />
         <div className="wrap-narrow">
           <h2>{d.localHeading}</h2>
           <div className="prose-miso">
@@ -81,7 +81,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
       </section>
 
       <section className="section shape-section">
-        <Swirl variant="b" className="left-[-14rem] top-[-6rem] w-[50rem] opacity-90" />
+        <Backdrop n={10} />
         <div className="wrap-narrow">
           <h2>{d.midHeading}</h2>
           <div className="prose-miso">
@@ -118,7 +118,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
       </section>
 
       <section className="section shape-section">
-        <Swirl variant="c" className="right-[-12rem] top-[-5rem] w-[52rem] opacity-90" />
+        <Backdrop n={9} />
         <div className="wrap-narrow">
           <Faq items={d.faqs} heading={`Common questions from ${d.town} businesses`} />
         </div>
