@@ -1,6 +1,6 @@
 export const SITE = {
   name: "MISO Studio",
-  url: "https://www.miso-studio.au",
+  url: "https://miso-studio.au",
   email: "hello@miso-studio.au",
   phone: "0403 670 603",
   phoneHref: "tel:+61403670603",

@@ -28,4 +28,4 @@ Next.js 16 site for miso-studio.au, hosted on Vercel.
 3. Add `miso-studio.au` and `www.miso-studio.au` to the Vercel project.
 4. In Squarespace Domains > DNS: delete the "Squarespace Defaults" preset, add Vercel's A and CNAME records. Leave the Google Workspace email (MX) records alone.
 5. Check both addresses load with the padlock, then cancel the Squarespace website plan.
-6. In Google Search Console, submit `https://www.miso-studio.au/sitemap.xml`.
+6. In Google Search Console, submit `https://miso-studio.au/sitemap.xml`.
