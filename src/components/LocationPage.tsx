@@ -47,7 +47,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
         </PageHero>
 
       <section className="section shape-section">
-        <Backdrop n={7} />
+        <Backdrop n={11} />
         <div className="wrap-narrow">
           <h2>{d.localHeading}</h2>
           <div className="prose-miso">
@@ -81,7 +81,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
       </section>
 
       <section className="section shape-section">
-        <Backdrop n={10} />
+        <Backdrop n={9} />
         <div className="wrap-narrow">
           <h2>{d.midHeading}</h2>
           <div className="prose-miso">
@@ -118,7 +118,7 @@ export function LocationPage({ d }: { d: LocationPageData }) {
       </section>
 
       <section className="section shape-section">
-        <Backdrop n={9} />
+        <Backdrop n={11} />
         <div className="wrap-narrow">
           <Faq items={d.faqs} heading={`Common questions from ${d.town} businesses`} />
         </div>

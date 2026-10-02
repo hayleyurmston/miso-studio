@@ -164,8 +164,9 @@ main > * + * {
 }
 
 /* Charcoal 1px lines frame the call-to-action bands */
-main > .cta-band {
-  border-top: 1px solid var(--color-charcoal);
+main > .cta-band,
+main > .cta-band + p {
+  border-top: 0;
   border-bottom: 1px solid var(--color-charcoal);
 }
 

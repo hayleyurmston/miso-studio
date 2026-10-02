@@ -60,7 +60,7 @@ export default function Home() {
       </section>
 
       <section className="section shape-section">
-        <Backdrop n={8} />
+        <Backdrop n={11} />
         <div className="wrap">
           <h2 className="max-w-2xl">Websites built to be found, and to bring in enquiries.</h2>
           <div className="mt-10 grid gap-6 md:grid-cols-2">
