@@ -2,6 +2,7 @@ import { PageHero } from "@/components/PageHero";
 import type { Metadata } from "next";
 import { Button } from "@/components/Button";
 import { CtaBand } from "@/components/CtaBand";
+import { Expertise } from "@/components/Expertise";
 import { JsonLd } from "@/components/JsonLd";
 import { Faq } from "@/components/Faq";
 import { Photo } from "@/components/Photo";
@@ -43,6 +44,8 @@ export default function StudioServices() {
             build considers user experience, mobile performance, SEO and conversion from the start.
           </p>
         </PageHero>
+
+      <Expertise />
 
       <section className="section">
         <div className="wrap">

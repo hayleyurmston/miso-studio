@@ -2,6 +2,7 @@ import { PageHero } from "@/components/PageHero";
 import type { Metadata } from "next";
 import { Button } from "@/components/Button";
 import { CtaBand } from "@/components/CtaBand";
+import { Expertise } from "@/components/Expertise";
 import { Photo } from "@/components/Photo";
 import { Testimonials } from "@/components/Testimonials";
 import { IMG } from "@/lib/images";
@@ -51,6 +52,10 @@ export default function About() {
                 with curiosity, care and a focus on clarity.
               </p>
               <p>
+                My work sits across GEO and AEO (getting found in AI search), CRO, UX and UI. I'm hands on with all four, from
+                strategy through to the build, which is why the sites I make look considered and perform.
+              </p>
+              <p>
                 MISO was born from a desire to do things differently - to build digital homes that feel intentional, not rushed. Every
                 design is a collaboration, every project a process grounded in trust, refinement and meaning.
               </p>
@@ -86,9 +91,31 @@ export default function About() {
         </div>
       </section>
 
+      <Expertise />
+
       <section className="section">
         <div className="wrap">
           <Testimonials items={TESTIMONIALS} heading="What clients say" />
+        </div>
+      </section>
+
+      <section className="section bg-cream">
+        <div className="wrap-narrow">
+          <p className="eyebrow">For agencies and studios</p>
+          <h2 className="mt-4">Working with agencies.</h2>
+          <div className="prose-miso">
+            <p>
+              I partner with agencies and studios that want senior design, build and search expertise without growing the team.
+              That might be a website for one of your clients, a UX or conversion review, or GEO and AEO support.
+            </p>
+            <p>
+              I can work quietly behind your brand, and I offer a white-label AI and SEO audit, so you can give your clients AI
+              readiness reports under your own name.
+            </p>
+          </div>
+          <div className="mt-8">
+            <Button href="/contact">Talk about a partnership</Button>
+          </div>
         </div>
       </section>
 

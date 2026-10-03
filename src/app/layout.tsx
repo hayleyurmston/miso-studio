@@ -80,6 +80,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               "Central West NSW",
               "Australia",
             ],
+            knowsAbout: ["Web design", "Generative engine optimisation (GEO)", "Answer engine optimisation (AEO)", "Conversion rate optimisation (CRO)", "User experience (UX)", "User interface (UI) design", "SEO"],
             priceRange: "$$",
             sameAs: [SITE.instagram, SITE.linkedin],
           }}

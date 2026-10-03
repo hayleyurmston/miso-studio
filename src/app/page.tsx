@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/Button";
 import { Backdrop } from "@/components/Backdrop";
+import { Expertise } from "@/components/Expertise";
 import { Photo } from "@/components/Photo";
 import { Faq } from "@/components/Faq";
 import { Testimonials } from "@/components/Testimonials";
@@ -111,6 +112,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Expertise />
 
       <section className="section shape-section">
         <Backdrop n={9} />

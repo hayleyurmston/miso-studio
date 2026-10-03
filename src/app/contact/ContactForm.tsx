@@ -9,6 +9,7 @@ const TOPICS = [
   "Brand identity",
   "Google Ads",
   "AI Readiness Audit",
+  "Agency partnership",
   "Something else (including technical support)",
 ];
 
