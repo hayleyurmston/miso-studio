@@ -10,7 +10,7 @@ export function Faq({ items, heading = "Questions" }: { items: { q: string; a: s
           mainEntity: items.map((i) => ({
             "@type": "Question",
             name: i.q,
-            acceptedAnswer: { "@type": "Answer", text: i.a },
+            acceptedAnswer: { "@type": "Answer", text: i.a.replace(/\n\n/g, " ") },
           })),
         }}
       />
@@ -22,7 +22,11 @@ export function Faq({ items, heading = "Questions" }: { items: { q: string; a: s
               {i.q}
               <span aria-hidden className="mt-1 text-clay transition-transform group-open:rotate-45">+</span>
             </summary>
-            <p className="mt-3 max-w-2xl text-[#2b2b29]">{i.a}</p>
+            {i.a.split("\n\n").map((para) => (
+              <p key={para} className="mt-3 max-w-2xl text-[#2b2b29]">
+                {para}
+              </p>
+            ))}
           </details>
         ))}
       </div>

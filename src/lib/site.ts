@@ -322,6 +322,10 @@ export const HOME_FAQS = [
     a: "No. MISO is based in Millthorpe and works closely with businesses in Orange, Bathurst and the wider Central West, but I also work remotely with businesses across Australia, including Sydney and Melbourne. Calls, reviews and handovers all happen online, and I'm happy to meet in person if you're nearby.",
   },
   {
+    q: "Do you work with creative agencies and brand studios?",
+    a: "Absolutely. MISO Studio collaborates with creative agencies, brand studios and independent consultants to provide website design, development, SEO and digital marketing support.\n\nWhether you need a trusted digital partner to bring a website design to life, specialist support for an existing client project or ongoing website management, we can work directly with your clients or behind the scenes as a white-label partner.\n\nWe also offer white-label AI and SEO Readiness Audits for agencies looking to expand their digital services.",
+  },
+  {
     q: "How long does a new website take?",
     a: "Once I have your content and assets, I'll build your homepage for a first review within 3 days. Most websites are ready for final review in 7-14 days, depending on the size of the project.",
   },
